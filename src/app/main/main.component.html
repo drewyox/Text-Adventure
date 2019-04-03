@@ -1,0 +1,28 @@
+<p>
+  main works!
+</p>
+
+<div>
+  <form>
+    <div>
+      <label>Character Name:</label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+        <label>Character Class:</label>
+        <br>
+        <input type="radio" value="cleric" #newplayerClass>Cleric<br>
+        <input type="radio" value="rogue" #newplayerClass>Rogue<br>
+        <input type="radio" value="fighter" #newplayerClass>Barbarian<br>
+    </div>
+
+    <div>
+      <label>Inventory</label>
+      <br>
+      <input #newinventory>
+    </div>
+    <button (click)="submitForm(newName.value, newplayerClass.value, newinventory.value)">Confirm</button>
+  </form>
+</div>
