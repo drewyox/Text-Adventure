@@ -7,7 +7,7 @@ import { PLAYERS } from '../playerInfo';
   styleUrls: ['./start.component.scss']
 })
 export class StartComponent implements OnInit {
- players = PLAYERS[0];
+ players = PLAYERS[1];
 
   constructor() { }
 

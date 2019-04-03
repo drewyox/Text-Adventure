@@ -8,15 +8,17 @@ import { PLAYERS } from '../playerInfo';
   styleUrls: ['./bridge.component.scss']
 })
 export class BridgeComponent implements OnInit {
-  player: Player = PLAYERS[0];
+  player: Player = PLAYERS[1];
 
   constructor() { }
 
   ngOnInit() {
-    if (PLAYERS[0].playerClass === 'Cleric') {
-      PLAYERS[0].hp--;
-      console.log(PLAYERS[1]);
-    }
+    console.log(this.player);
+
+    // if (this.player.playerClass === 'barbarian') {
+    //   this.player.inventory.push("another sword");
+    //   console.log(this.player);
+    // }
 
 
   }

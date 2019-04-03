@@ -11,10 +11,10 @@ import { PLAYERS } from '../playerInfo';
 })
 export class MainComponent implements OnInit {
 
-  newPlayer: Player = new Player (null, null, null);
+  newPlayer: Player = new Player (null, null, []);
   submitForm(){
     PLAYERS.push(this.newPlayer);
-    console.log(PLAYERS)
+    console.log(PLAYERS[1])
 
   }
   constructor() { }

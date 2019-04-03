@@ -7,14 +7,25 @@
       <label>Character Name:</label>
       <br>
       <input [(ngModel)]="newPlayer.name">
+
     </div>
 
     <div>
         <label>Character Class:</label>
         <br>
-        <input [(ngModel)]="newPlayer.playerClass" type="radio" value="cleric">Cleric<br>
-        <input [(ngModel)]="newPlayer.playerClass" type="radio" value="rogue" >Rogue<br>
-        <input [(ngModel)]="newPlayer.playerClass" type="radio" value="barbarian">Barbarian<br>
+        <input [(ngModel)]="newPlayer.playerClass" name="playerClass" type="radio" value="cleric">Cleric<br>
+        <input [(ngModel)]="newPlayer.playerClass" name="playerClass" type="radio" value="rogue" >Rogue<br>
+        <input [(ngModel)]="newPlayer.playerClass" name="playerClass" type="radio" value="barbarian">Barbarian<br>
+    </div>
+
+    <div>
+      <label>Starting Item</label>
+      <br>
+      <input [(ngModel)]="newPlayer.inventory[0]" name="playerItem" type="radio" value="potion">Potion<br>
+      <input [(ngModel)]="newPlayer.inventory[0]" name="playerItem" type="radio" value="holywater" >Holy Water<br>
+      <input [(ngModel)]="newPlayer.inventory[0]" name="playerItem" type="radio" value="sword">Sword<br>
+      <input [(ngModel)]="newPlayer.inventory[0]" name="playerItem" type="radio" value="rope" >Rope<br>
+      <input [(ngModel)]="newPlayer.inventory[0]" name="playerItem" type="radio" value="bow">Bow<br>
     </div>
     {{newPlayer.name}}
     {{newPlayer.playerClass}}
