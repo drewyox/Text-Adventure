@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { routing } from './app.routing';
 import { StartComponent } from './start/start.component';
+import { BridgeComponent } from './bridge/bridge.component';
+import { BrokenCartComponent } from './broken-cart/broken-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    StartComponent
+    StartComponent,
+    BridgeComponent,
+    BrokenCartComponent
   ],
   imports: [
     BrowserModule,

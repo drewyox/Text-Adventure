@@ -2,6 +2,8 @@ import { ModuleWithProviders } from '@angular/core';
 import  { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { StartComponent } from './start/start.component';
+import { BridgeComponent } from './bridge/bridge.component';
+import { BrokenCartComponent } from './broken-cart/broken-cart.component';
 
 const appRoutes: Routes = [
   {
@@ -11,6 +13,14 @@ const appRoutes: Routes = [
   {
     path:'start',
     component: StartComponent
+  },
+  {
+    path:'bridge',
+    component: BridgeComponent
+  },
+  {
+    path: 'brokenCart',
+    component: BrokenCartComponent
   }
 
 ];
