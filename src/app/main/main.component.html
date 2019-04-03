@@ -3,26 +3,27 @@
 </p>
 
 <div>
-  <form>
     <div>
       <label>Character Name:</label>
       <br>
-      <input #newName>
+      <input [(ngModel)]="newPlayer.name">
     </div>
 
     <div>
         <label>Character Class:</label>
         <br>
-        <input type="radio" value="cleric" #newplayerClass>Cleric<br>
-        <input type="radio" value="rogue" #newplayerClass>Rogue<br>
-        <input type="radio" value="fighter" #newplayerClass>Barbarian<br>
+        <input [(ngModel)]="newPlayer.playerClass" type="radio" value="cleric">Cleric<br>
+        <input [(ngModel)]="newPlayer.playerClass" type="radio" value="rogue" >Rogue<br>
+        <input [(ngModel)]="newPlayer.playerClass" type="radio" value="barbarian">Barbarian<br>
     </div>
+    {{newPlayer.name}}
+    {{newPlayer.playerClass}}
 
     <div>
       <label>Inventory</label>
       <br>
       <input #newinventory>
     </div>
-    <button (click)="submitForm(newName.value, newplayerClass.value, newinventory.value)">Confirm</button>
-  </form>
+    <button (click)="submitForm()">Confirm</button>
+
 </div>

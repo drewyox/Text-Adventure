@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from '../player.model';
+import { FormsModule } from '@angular/forms';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-main',
@@ -8,9 +10,12 @@ import { Player } from '../player.model';
 })
 export class MainComponent implements OnInit {
 
-  submitForm(newname: string, newplayerClass: string, newinventory: string[]){
-    const character: Player = new Player( newname, newplayerClass, newinventory);
-    console.log(character)
+  newPlayer: Player = new Player (null, null, null);
+  submitForm(){
+    // this.newPlayer.name = newname;
+    // this.newPlayer.playerClass = newplayerClass;
+    // this.newPlayer.inventory = newinventory
+    console.log(this.newPlayer)
 
   }
   constructor() { }
@@ -19,3 +24,6 @@ export class MainComponent implements OnInit {
   }
 
 }
+
+
+// form.controls['playerClass'].value;
