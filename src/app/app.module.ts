@@ -9,6 +9,7 @@ import { routing } from './app.routing';
 import { StartComponent } from './start/start.component';
 import { BridgeComponent } from './bridge/bridge.component';
 import { BrokenCartComponent } from './broken-cart/broken-cart.component';
+import { ForestEnterComponent } from './forest-enter/forest-enter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrokenCartComponent } from './broken-cart/broken-cart.component';
     MainComponent,
     StartComponent,
     BridgeComponent,
-    BrokenCartComponent
+    BrokenCartComponent,
+    ForestEnterComponent
   ],
   imports: [
     BrowserModule,
