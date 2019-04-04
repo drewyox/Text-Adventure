@@ -1,23 +1,23 @@
 <h1>The Bridge</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>{{playerToDisplay.name}} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<div *ngIf="player.playerClass === 'cleric'" >
+<div *ngIf="playerToDisplay.playerClass === 'cleric'" >
   <p>This is the clerics story flavor text</p>
 
 </div>
 
-<div *ngIf="player.playerClass === 'rogue'" >
+<div *ngIf="playerToDisplay.playerClass === 'rogue'" >
   <p>This is the Rogues story flavor text</p>
 
 </div>
 
-<div *ngIf="player.playerClass === 'barbarian'" >
+<div *ngIf="playerToDisplay.playerClass === 'barbarian'" >
   <p>This is the Barbarian story flavor text</p>
 
 </div>
 
 <div class="links">
   <a routerLink="/forestEnter">Try to cross the bridge</a>
-  <a *ngIf="player.inventory.includes('rope')" routerLink="/forestEnter">Try to repair the bridge with your rope</a>
+  <a *ngIf="playerToDisplay.inventory.includes('rope')" routerLink="/forestEnter">Try to repair the bridge with your rope</a>
   <a routerLink="/start">Go Back</a>
 </div>

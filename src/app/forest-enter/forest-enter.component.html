@@ -1,16 +1,16 @@
 <h1>The Forest Entrance</h1>
 
-<div *ngIf="player.playerClass === 'rogue'">
+<div *ngIf="playerToDisplay.playerClass === 'rogue'">
   <p>You nimbly run across</p>
 
 </div>
 
-<div *ngIf="player.inventory.includes('rope') && player.playerClass !=='rogue'">
+<div *ngIf="playerToDisplay.inventory.includes('rope') && playerToDisplay.playerClass !=='rogue'">
   <p>You use your rope to repair the bridge..../p>
 
 </div>
 
-<div *ngIf="player.playerClass !== 'rogue'&& !player.inventory.includes('rope')">
+<div *ngIf="playerToDisplay.playerClass !== 'rogue'&& !playerToDisplay.inventory.includes('rope')">
   <p>You take damage</p>
 
 </div>
