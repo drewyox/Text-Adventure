@@ -12,6 +12,10 @@ import { BrokenCartComponent } from './broken-cart/broken-cart.component';
 import { ForestEnterComponent } from './forest-enter/forest-enter.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { WakeComponent } from './wake/wake.component';
+import { LootcartComponent } from './lootcart/lootcart.component';
+import { DefendComponent } from './defend/defend.component';
+import { PlayerViewComponent } from './player-view/player-view.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +31,11 @@ export const firebaseConfig = {
     StartComponent,
     BridgeComponent,
     BrokenCartComponent,
-    ForestEnterComponent
+    ForestEnterComponent,
+    WakeComponent,
+    LootcartComponent,
+    DefendComponent,
+    PlayerViewComponent
   ],
   imports: [
     BrowserModule,

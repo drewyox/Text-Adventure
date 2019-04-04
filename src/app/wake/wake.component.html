@@ -1,0 +1,10 @@
+<h1>Waking the Victims</h1>
+
+<p> They attack!</p>
+
+<div class="links">
+<a *ngIf="playerToDisplay.inventory.includes('sword')|| playerToDisplay.inventory.includes('bow')" routerLink="/defend">Attack with your {{playerToDisplay.inventory[0]}}!</a>
+<a routerLink="/defend">Defend yourself the best you can!</a>
+<a routerLink="/bridge">Run away to the bridge!</a>
+
+<app-player-view></app-player-view>

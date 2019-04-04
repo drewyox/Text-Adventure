@@ -1,0 +1,12 @@
+<h1>Defend Yourself!</h1>
+
+
+<div *ngIf="playerToDisplay.inventory.includes('sword')|| playerToDisplay.inventory.includes('bow')">
+  <p>You slew the assailants with your {{playerToDisplay.inventory[indexPositionofItem]}}</p>
+</div>
+
+<div *ngIf="!playerToDisplay.inventory.includes('sword') && !playerToDisplay.inventory.includes('bow')">
+  <p>You did your best with what you had, but took a few licks.</p>
+</div>
+
+<app-player-view></app-player-view>

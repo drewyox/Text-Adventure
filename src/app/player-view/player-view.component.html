@@ -1,0 +1,5 @@
+<h1>Hero Name: {{playerToDisplay.name}}</h1>
+<h2>Class: {{playerToDisplay.playerClass}}</h2>
+<h2>HP: {{playerToDisplay.hp}}</h2>
+<h2 *ngFor="let item of playerToDisplay.inventory">{{item}}</h2>
+<h2>KEY: {{playerToDisplay.$key}}</h2>

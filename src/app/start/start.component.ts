@@ -22,6 +22,8 @@ export class StartComponent implements OnInit {
                                           latestData[latestData.length - 1].inventory)
        console.log(this.playerToDisplay)
      })
+
+     this.playerService.updatePlayer(this.playerToDisplay);
   }
 
 }

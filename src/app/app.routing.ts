@@ -5,6 +5,10 @@ import { StartComponent } from './start/start.component';
 import { BridgeComponent } from './bridge/bridge.component';
 import { BrokenCartComponent } from './broken-cart/broken-cart.component';
 import { ForestEnterComponent} from './forest-enter/forest-enter.component';
+import { WakeComponent} from './wake/wake.component';
+import { LootcartComponent} from './lootcart/lootcart.component';
+import { DefendComponent } from './defend/defend.component';
+
 
 const appRoutes: Routes = [
   {
@@ -26,6 +30,18 @@ const appRoutes: Routes = [
   {
     path: 'forestEnter',
     component: ForestEnterComponent
+  },
+  {
+    path: 'wake',
+    component: WakeComponent
+  },
+  {
+    path: 'lootcart',
+    component: LootcartComponent
+  },
+  {
+    path: 'defend',
+    component: DefendComponent
   }
 
 ];

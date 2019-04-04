@@ -20,6 +20,18 @@ export class PlayerService {
   addPlayer(player: Player) {
     this.players.push(player);
   }
+
+  getPlayerById(playerId: string){
+    return this.database.object('/players/' + playerId);
+  }
+
+  updatePlayer(localUpdatePlayer) {
+    var firebasePlayerEntry = this.getPlayerById(localUpdatePlayer.$key);
+    // firebasePlayerEntry.update({name: localUpdatePlayer.name});
+    console.log(firebasePlayerEntry);
+  }
+
+
  //  newMethod(){
  //  this.players.subscribe(latestData => {
  //     this.testPlayer = new Player (latestData[latestData.length - 1].name,
